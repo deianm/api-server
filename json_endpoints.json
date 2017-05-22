@@ -1,0 +1,440 @@
+/*
+  10K CLUB DOCUMENTATION
+
+  Brand Endpoints
+*/
+
+/*------------------------------------------------*/
+
+/*----------------------POST----------------------*/
+
+/*------------------------------------------------*/
+
+/*
+ENDPOINT --- http://domain.com/auth/register -----------------------------------------
+*/
+
+{
+  "payload": {
+    "brand_name": "somebrand",
+    "email": "someone@somewhere.com",
+    "password": "strongP4553020"
+  }
+}
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+
+/*
+ENDPOINT --- http://domain.com/auth/login -----------------------------------------
+*/
+
+{
+  "payload": {
+    "email": "someone@somewhere.com",
+    "password": "STRONGPASS"
+  }
+}
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+
+
+/*
+ENDPOINT --- http://domain.com/auth/logout -----------------------------------------
+*/
+
+// No params required
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+
+/*
+ENDPOINT --- http://domain.com/brand/create_offer -----------------------------------------
+*/
+{
+  "payload": {
+    "hashtag": "#something",
+    "start_date": "01/12/2016",
+    "end_date": "01/14/2016",
+    "offer_details": "Any description or extra details"
+  }
+}
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+
+
+/*
+ENDPOINT --- http://domain.com/brand/cancel_offer -----------------------------------------
+*/
+
+{
+  "payload": {
+    "id": "offer_id"
+  }
+}
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+
+
+/*
+ENDPOINT --- http://domain.com/brand/approve_submission -----------------------------------------
+*/
+
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+
+/*
+ENDPOINT --- http://domain.com/brand/deny_submission -----------------------------------------
+*/
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+/*
+ENDPOINT --- http://domain.com/brand/approve_advertiser -----------------------------------------
+*/
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+/*
+ENDPOINT --- http://domain.com/brand/deny_advertiser -----------------------------------------
+*/
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+/*
+ENDPOINT --- http://domain.com/brand/request_join -----------------------------------------
+*/
+
+{
+  "payload": {
+    "instagram_id": "5432246789",
+    "brand_id": "3"
+  }
+}
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+/*
+ENDPOINT --- http://domain.com/brand/revoke_join -----------------------------------------
+*/
+
+{
+  "payload": {
+    "status_id": "90",
+    "brand_id": "3"
+  }
+}
+
+/*
+  success | fail | error
+  response
+*/
+{
+  "status": "success",
+  "data": {
+    "data": "more data"
+  }
+}
+
+{
+  "status": "fail",
+  "data": {
+    "title": "A title is required"
+  }
+}
+
+{
+  "status": "error",
+  "message": "Unable to communicate with database"
+}
+
+/*------------------------------------------------*/
+
+/*-----------------------GET----------------------*/
+
+/*------------------------------------------------*/
+
+
+/*
+ENDPOINT --- http://ec2-52-91-188-123.compute-1.amazonaws.com/brand/feed -----------------------------------------
+*/
+
+/*
+ENDPOINT --- http://ec2-52-91-188-123.compute-1.amazonaws.com/brand/stats -----------------------------------------
+*/
+
+/*
+ENDPOINT --- http://ec2-52-91-188-123.compute-1.amazonaws.com/brand/users -----------------------------------------
+*/
+
+/*
+ENDPOINT --- http://ec2-52-91-188-123.compute-1.amazonaws.com/brand/offers -----------------------------------------
+*/
+//TODO: "current_offer" needs to be fixed...
+{
+  "data": {
+    "success": "true",
+    "offers": {
+      "current_offers": {
+        "0": {
+          "id": 13,
+          "brand_id": 3,
+          "hashtag": "#PEWHASH",
+          "offer_details": "MORE PEW HASH",
+          "days_left": 18,
+          "offer_cost": 0,
+          "offer_posts": 0,
+          "offer_likes": 0
+        }
+      },
+      "expired_offers": [
+        {
+          "id": 1,
+          "brand_id": 3,
+          "offer_cost": 605,
+          "created_at": "2017-04-06 00:32:50",
+          "updated_at": "2017-01-30 00:00:00",
+          "offer_posts": 22,
+          "offer_likes": 897,
+          "start_date": "2017-09-30",
+          "expiration_date": "2017-12-30",
+          "expired": 0,
+          "hashtag": "#Audi",
+          "pic_location": "/somedir",
+          "offer_details": "Pose next to an Audi R8."
+        }
+      ]
+    }
+  }
+}
+
+/*
+ENDPOINT --- http://ec2-52-91-188-123.compute-1.amazonaws.com/brand/messages -----------------------------------------
+*/
+
+{
+  "data": {
+    "success": "true",
+    "messages": [
+      {
+        "message": "Some message",
+        "message_type": 1,
+        "message_status": 1
+      },
+      {
+        "message": "Another message",
+        "message_type": 1,
+        "message_status": 2
+      },
+      {
+        "message": "One more message",
+        "message_type": 1,
+        "message_status": 3
+      }
+    ]
+  }
+}
