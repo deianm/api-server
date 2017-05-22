@@ -440,7 +440,6 @@ class UserController extends Controller
 
     public function build(Request $request, $response)
     {
-        //TODO: need to figure out if to use user_id from db or just use instagram_id and say fuck it for now..
 
             $instagram_id = $_SESSION['instagram_id'];
 

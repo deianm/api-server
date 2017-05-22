@@ -38,7 +38,7 @@ class NotificationController extends Controller
         $read_count = '';
         $unread_count = '';
         $read_i = 0;
-        $unread_i = 1; //Some fucking bug is count this shit as -1 bleh.... fuck it made it 1;
+        $unread_i = 1;
 
         //dd($result);
 
